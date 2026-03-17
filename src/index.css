@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    @apply bg-canvas text-charcoal;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html.dark {
+    @apply bg-[#0A0A0A] text-[#FAFAF8];
+  }
+
+  body { overflow: hidden; height: 100dvh; width: 100vw; }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-border rounded-full; }
+
+  ::selection { @apply bg-gold/30; }
+}
+
+@layer components {
+  .serif { font-family: 'Cormorant Garamond', serif; }
+  .label { font-family: 'Outfit', sans-serif; }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-gold text-[#0A0A0A]
+           font-medium tracking-wide text-sm transition-all duration-200
+           hover:bg-gold/90 active:scale-[0.98] rounded-none;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 border border-border
+           text-muted font-medium tracking-wide text-sm transition-all duration-200
+           hover:border-charcoal hover:text-charcoal dark:hover:border-[#FAFAF8]
+           dark:hover:text-[#FAFAF8] rounded-none;
+  }
+
+  .panel-surface {
+    @apply bg-surface border-r border-border;
+  }
+
+  .item-card {
+    @apply relative flex flex-col items-center gap-2 p-3 border border-transparent
+           cursor-pointer transition-all duration-150
+           hover:border-border hover:bg-surface;
+  }
+
+  .item-card.selected {
+    @apply border-gold bg-gold/5;
+  }
+
+  .section-title {
+    @apply serif text-xs tracking-[0.25em] uppercase text-muted mb-4;
+  }
+
+  .tab-button {
+    @apply px-4 py-2 text-xs tracking-widest uppercase font-medium transition-all
+           duration-150 border-b-2 border-transparent text-muted
+           hover:text-charcoal dark:hover:text-[#FAFAF8];
+  }
+
+  .tab-button.active {
+    @apply border-gold text-charcoal dark:text-[#FAFAF8];
+  }
+}
+
+/* Three.js canvas */
+canvas {
+  display: block;
+  outline: none;
+}
+
+/* Framer Motion page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
