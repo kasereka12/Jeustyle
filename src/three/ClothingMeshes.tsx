@@ -403,8 +403,8 @@ export function BabouchesOr({ styling }: MeshProps) {
             {mat}
           </mesh>
           {/* Pointed toe */}
-          <mesh position={[0, 0, 0.13]}>
-            <coneGeometry args={[0.04, 0.08, 8]} rotation={[Math.PI / 2, 0, 0] as any} />
+          <mesh position={[0, 0, 0.13]} rotation={[Math.PI / 2, 0, 0]}>
+            <coneGeometry args={[0.04, 0.08, 8]} />
             {mat}
           </mesh>
         </group>

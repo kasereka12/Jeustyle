@@ -10,7 +10,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#1C1917', '#3B1A08', '#5C3317', '#92400E', '#B45309', '#D97706', '#1E3A8A', '#7C3AED'],
     description: 'Cheveux naturels en afro sphérique — symbole de fierté et de beauté africaine.',
     culturalNote: 'L\'afro est devenu un symbole politique et culturel majeur dès les années 60, notamment lors du mouvement Black Power. En Afrique, il représente la connexion à la nature et aux ancêtres.',
-    wornBy: ['female', 'male', 'neutral'],
+    wornBy: ['female', 'male', 'female', 'male'],
     tags: ['cheveux', 'naturel', 'fierté', 'classique'],
   },
   {
@@ -21,7 +21,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#1C1917', '#3B1A08', '#92400E', '#7C3AED', '#1E3A8A', '#EC4899'],
     description: 'Longues tresses africaines tombant sur les épaules. Un art capillaire ancestral.',
     culturalNote: 'Les tresses africaines sont bien plus qu\'une coiffure — elles constituaient historiquement un moyen de communication. Certaines configurations indiquaient le statut social, l\'ethnie, ou même l\'âge.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['tresses', 'élégant', 'traditionnel', 'femme'],
   },
   {
@@ -43,7 +43,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#F8F8F5', '#1C1917', '#DAA520', '#DC2626', '#1E3A8A'],
     description: 'Calot brodé porté par les hommes à travers toute l\'Afrique subsaharienne.',
     culturalNote: 'Le Kufi est porté du Sénégal à la Tanzanie, avec des variations stylistiques régionales. Dans de nombreuses cultures, il signale la sagesse et la dignité de celui qui le porte.',
-    wornBy: ['male', 'neutral'],
+    wornBy: ['male', 'female', 'male'],
     tags: ['kufi', 'homme', 'sagesse', 'broderie'],
   },
   {
@@ -54,7 +54,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#1C1917', '#3B1A08', '#92400E', '#DAA520'],
     description: 'Locks naturelles, symbole de spiritualité et de connection à la Terre.',
     culturalNote: 'Présents depuis l\'Antiquité en Afrique et en Asie, les dreadlocks sont sacrés pour les moines Rastafari éthiopiens (Dreads de Qedamawi) et portés comme protection spirituelle dans de nombreuses cultures africaines.',
-    wornBy: ['female', 'male', 'neutral'],
+    wornBy: ['female', 'male', 'female', 'male'],
     tags: ['locks', 'spirituel', 'naturel', 'rastafari'],
   },
   {
@@ -65,7 +65,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#1E3A8A', '#1C1917', '#F5F5F5', '#0F766E'],
     description: 'Le Tagelmust, turban indigo des Touareg du Sahara. Protège du soleil et du sable.',
     culturalNote: 'Chez les Touareg, c\'est l\'homme (pas la femme) qui voile son visage. Le turban indigo teint parfois la peau en bleu — d\'où le surnom «Hommes bleus». Il symbolise l\'honneur et la dignité.',
-    wornBy: ['male', 'neutral'],
+    wornBy: ['male', 'female', 'male'],
     tags: ['turban', 'touareg', 'sahara', 'homme', 'nomade'],
   },
 
@@ -78,7 +78,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#CC5500', '#1E3A8A', '#15803D', '#DC2626', '#7C3AED', '#DAA520'],
     description: 'Chemise à col en V brodé, emblématique de l\'Afrique de l\'Ouest. Confort et style.',
     culturalNote: 'Le Dashiki est originaire d\'Afrique de l\'Ouest mais devenu international dans les années 60 grâce au mouvement des droits civiques américains. Son motif de col «Angelina» est tissé séparément.',
-    wornBy: ['male', 'female', 'neutral'],
+    wornBy: ['male', 'female', 'female', 'male'],
     tags: ['dashiki', 'broderie', 'v-neck', 'classique'],
   },
   {
@@ -89,7 +89,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#DC2626', '#7C3AED', '#0F766E', '#EC4899', '#1E3A8A', '#C9A84C'],
     description: 'Crop top court en tissu ankara. Style afro-urbain et contemporain.',
     culturalNote: 'Le tissu ankara, aussi connu sous le nom de «wax print», fut introduit en Afrique de l\'Ouest par des marchands hollandais au XIXe siècle. Il est aujourd\'hui un symbole de mode africaine contemporaine.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['crop', 'ankara', 'moderne', 'urbain'],
   },
   {
@@ -100,7 +100,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#1C1917', '#1E3A8A', '#15803D', '#C67B4B', '#DAA520', '#DC2626'],
     description: 'Chemise boutonnée taillée dans le tissu wax imprimé. Élégance décontractée.',
     culturalNote: 'Portée autant en Afrique de l\'Ouest qu\'à Lagos, Accra, Abidjan ou dans la diaspora à Paris et New York, la chemise wax est devenue une pièce maîtresse du style afro-contemporain.',
-    wornBy: ['male', 'neutral'],
+    wornBy: ['male', 'female', 'male'],
     tags: ['chemise', 'wax', 'homme', 'moderne'],
   },
 
@@ -113,7 +113,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#DAA520', '#DC2626', '#1E3A8A', '#15803D', '#7C3AED', '#F5E6C8'],
     description: 'Pagne noué à la taille, la jupe traditionnelle de l\'Afrique de l\'Ouest.',
     culturalNote: 'Le pagne est la tenue quotidienne de millions de femmes en Afrique subsaharienne. La façon de le nouer varie selon les ethnies et les occasions — certains nœuds indiquent le deuil, d\'autres la célébration.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['pagne', 'traditionnel', 'femme', 'élégant'],
   },
   {
@@ -124,7 +124,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#7C3AED', '#EC4899', '#0F766E', '#DC2626', '#DAA520', '#1E3A8A'],
     description: 'Longue jupe fluide en tissu wax à motifs floraux. Silhouette élégante et libre.',
     culturalNote: 'La longue jupe wax est aujourd\'hui une pièce centrale de la mode africaine contemporaine, portée des marchés de Lomé aux podiums de Paris.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['jupe', 'wax', 'fluide', 'moderne'],
   },
   {
@@ -135,7 +135,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#1C1917', '#1E3A8A', '#2D3A8C', '#DC2626', '#7C3AED', '#DAA520'],
     description: 'Pantalon tailleur ample en tissu ankara. Style afro-urbain élégant.',
     culturalNote: 'Le pantalon en tissu africain est une innovation contemporaine qui combine la coupe occidentale avec les tissus et motifs africains traditionnels.',
-    wornBy: ['female', 'male', 'neutral'],
+    wornBy: ['female', 'male', 'female', 'male'],
     tags: ['pantalon', 'tailleur', 'moderne', 'ankara'],
   },
 
@@ -148,7 +148,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#F8F8F5', '#1E3A8A', '#15803D', '#DAA520', '#1C1917', '#7C3AED'],
     description: 'Le Grand Boubou, robe longue ample symbole d\'élégance en Afrique de l\'Ouest.',
     culturalNote: 'Le Boubou sénégalais est une tenue de prestige. Les femmes portent jusqu\'à 3 couches de mousseline brodée lors des cérémonies. La confection peut prendre plusieurs jours à une couturière.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['boubou', 'sénégal', 'élégance', 'luxe', 'cérémonie'],
   },
   {
@@ -170,7 +170,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#0F766E', '#DC2626', '#1E1B4B', '#7C3AED', '#F5E6C8', '#DAA520'],
     description: 'Le Kaftan marocain brodé à la main, summum de l\'artisanat nord-africain.',
     culturalNote: 'Le Kaftan marocain est inscrit au patrimoine immatériel de l\'UNESCO. Chaque région du Maroc a ses broderies caractéristiques : Fès, Salé, Marrakech. Un kaftan de cérémonie peut nécessiter 3 mois de travail.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['kaftan', 'maroc', 'broderie', 'luxe', 'unesco'],
   },
   {
@@ -181,7 +181,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#DC2626', '#7C3AED', '#0F766E', '#EC4899', '#1E3A8A', '#C9A84C'],
     description: 'Combinaison pantalon en tissu ankara. Mode africaine résolument contemporaine.',
     culturalNote: 'La mode africaine contemporaine fusionne les coupes occidentales avec les tissus et motifs africains. Des créateurs comme Duro Olowu, Lisa Folawiyo ou Christie Brown ont porté cette esthétique sur les podiums internationaux.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['jumpsuit', 'combinaison', 'moderne', 'tendance'],
   },
 
@@ -194,7 +194,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#DAA520', '#F5E6C8', '#1C1917', '#DC2626', '#15803D'],
     description: 'Babouches artisanales en cuir cousues à la main dans les souks de Fès.',
     culturalNote: 'Les babouches (Balgha) sont fabriquées depuis le XIIe siècle dans les tanneries de Fès, classées patrimoine mondial. La couleur a une signification : jaune pour la cité, rouge pour les tribus, blanc pour les mariages.',
-    wornBy: ['female', 'male', 'neutral'],
+    wornBy: ['female', 'male', 'female', 'male'],
     tags: ['babouches', 'maroc', 'artisanat', 'cuir'],
   },
   {
@@ -205,7 +205,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#7C2D12', '#1C1917', '#DC2626', '#A0522D'],
     description: 'Sandales Akala en cuir de buffle portées par les guerriers Massaï.',
     culturalNote: 'Les Akala Massaï étaient traditionnellement faites de pneus de voiture récupérés — une ingénieuse adaptation moderne d\'une tradition ancestrale. Elles symbolisent la mobilité et la force du guerrier.',
-    wornBy: ['female', 'male', 'neutral'],
+    wornBy: ['female', 'male', 'female', 'male'],
     tags: ['sandales', 'massai', 'cuir', 'guerrier'],
   },
   {
@@ -216,7 +216,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#DC2626', '#1E3A8A', '#7C3AED', '#0F766E', '#DAA520', '#EC4899'],
     description: 'Stilettos recouverts de tissu ankara. L\'élégance africaine à son apogée.',
     culturalNote: 'Les créateurs de mode africains incorporent de plus en plus les tissus traditionnels dans les accessoires — sacs, chaussures, bijoux — créant un vocabulaire visuel distinctif afro-contemporain.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['talons', 'ankara', 'élégance', 'soirée'],
   },
 
@@ -229,7 +229,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#DC2626', '#FFFFFF', '#1E3A8A', '#15803D', '#DAA520'],
     description: 'Grand collier en perles multicolores, œuvre d\'art portée du Kenya à la Tanzanie.',
     culturalNote: 'Chaque couleur du collier Massaï a une signification : rouge = sang/bravoure, blanc = pureté/paix, bleu = ciel/eau, vert = terre/santé, jaune/orange = hospitalité. Les femmes passent des mois à les confectionner.',
-    wornBy: ['female', 'male', 'neutral'],
+    wornBy: ['female', 'male', 'female', 'male'],
     tags: ['collier', 'massai', 'perles', 'coloré', 'symbolique'],
   },
   {
@@ -240,7 +240,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#DAA520', '#C0C0C0', '#C67B4B'],
     description: 'Boucles d\'oreilles en or pur, travaillées par les orfèvres Ashanti du Ghana.',
     culturalNote: 'Les Ashanti du Ghana sont réputés pour leur orfèvrerie depuis des siècles. L\'or était pour eux non seulement richesse mais connexion avec les ancêtres. Le Chef de l\'État porte encore aujourd\'hui des ornements ashanti lors des cérémonies.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['boucles', 'or', 'ashanti', 'ghana', 'luxe'],
   },
   {
@@ -251,7 +251,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#F4E1C1', '#C9A84C', '#DC2626', '#1E3A8A', '#15803D'],
     description: 'Bracelets empilés en coquilles de cauris, l\'ancienne monnaie africaine.',
     culturalNote: 'Les cauris (cypraea moneta) furent la monnaie dominante en Afrique de l\'Ouest pendant des siècles, jusqu\'au XIXe. Aujourd\'hui portés en bijoux, ils symbolisent la prospérité, la fertilité et la connexion à l\'Océan.',
-    wornBy: ['female', 'male', 'neutral'],
+    wornBy: ['female', 'male', 'female', 'male'],
     tags: ['bracelets', 'cauris', 'coquillages', 'traditionnel'],
   },
 
@@ -264,7 +264,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#C9A84C', '#DC2626', '#15803D', '#1C1917'],
     description: 'Panier tressé éthiopien aux couleurs vives, œuvre artisanale millénaire.',
     culturalNote: 'L\'artisanat du panier tressé (Mesob) est une tradition culturelle majeure en Éthiopie et au Rwanda. Les plus beaux paniers peuvent prendre plusieurs semaines à confectionner et sont transmis de mère en fille.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['panier', 'éthiopie', 'artisanat', 'tressé'],
   },
   {
@@ -275,7 +275,7 @@ export const CLOTHING: ClothingItem[] = [
     availableColors: ['#DAA520', '#F5E6C8', '#DC2626', '#7C3AED'],
     description: 'Éventail en plumes et tissu kente porté lors des cérémonies royales yoruba.',
     culturalNote: 'Dans la tradition Yoruba, l\'éventail (Ẹ̀wù Ẹgúngún) est un accessoire rituel lié aux cultes des ancêtres. Lors des festivals Egungun, les masques et accessoires servent de canal entre le monde des vivants et celui des esprits.',
-    wornBy: ['female', 'neutral'],
+    wornBy: ['female', 'female', 'male'],
     tags: ['eventail', 'cérémonie', 'yoruba', 'plumes'],
   },
 ];
